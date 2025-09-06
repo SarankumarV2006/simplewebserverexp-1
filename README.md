@@ -1,4 +1,6 @@
 # EX01 Developing a Simple Webserver
+##Name:V.Sarankumar
+#reg.no:212224220089
 ## Date: 30.08.2025
 
 ## AIM:
