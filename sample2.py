@@ -1,26 +1,33 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-content = '''
+content='''
 <!doctype html>
 <html>
     <head>
-        <title>Sample
-        </title>
+      <title> My Web Server</title>
     </head>
     <body>
-        <font color="black" face="Lucida Handwriting" size="100">
-            <h1 align="center"> <b> List of protocol in TCP/IP Model</b></h1>
-        </font>
-        <font color="green">
-        <h2>
-            Application Layer - HTTP, FTP, DNS, Telnet & SSH <br>
-            Transport Layer - TCP & UDP <br>
-            Network Layer - IPV4/IPV6 <br>
-        </h2>
-        </font>
+        <table border="1" align="center" cellpadding="10" bgcolor="pink" >
+        <caption><h1>List Of Protocols in TCP/IP Protocol Suite</h1></caption>
+        <tr>
+            <th>S.No.</th><th>Name Of The Layer</th><th>Name of The Protocol</th>
+        </tr>
+        <tr>
+            <td>1.</td><td>Application Layer</td><td>HTTP,FTP,DNS,TELNET & SSH</td>
+        </tr>
+        <tr>
+            <td>2.</td><td>Transport Layer</td><td>TCP & UDP</td>
+        </tr>
+        <tr>
+            <td>3.</td><td>Network Layer</td><td>IPV4/IPV6</td>
+        </tr>
+        <tr>
+            <td>4.</td><td>Link Layer</td><td>Ethernet</td>
+        </tr>
+        </table>
     </body>
-</html>
-'''
+</html>'''
+
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
